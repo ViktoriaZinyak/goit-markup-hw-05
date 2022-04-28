@@ -116,6 +116,14 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--header-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-link:hover,
+.header-link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-color);
 }
 
 .contacts-list {
@@ -138,13 +146,6 @@ header {
 
 .contacts-list .contacts-item + .contacts-item {
   margin-left: 50px;
-}
-
-.header-link:hover,
-.header-link:focus,
-.contacts-link:hover,
-.contacts-link:focus {
-  color: var(--accent-color);
 }
 
 .item-img {
@@ -324,6 +325,9 @@ header {
   align-items: center;
   fill: var(--soc-icon-color);
   cursor: pointer;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .soc-link:hover,
@@ -367,6 +371,8 @@ header {
   border-radius: 4px;
   cursor: pointer;
   fill: var(--soc-icon-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
@@ -403,11 +409,15 @@ header {
 .footer-address-link {
   font-style: normal;
   color: var(--footer-address-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contacts-link {
   font-style: normal;
   color: var(--footer-contacts-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-footer {
@@ -454,6 +464,8 @@ header {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.1);
   fill: var(--main-bg-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-link:hover,
@@ -484,6 +496,10 @@ header {
   color: var(--header-color);
   background-color: var(--second-bg-color);
   cursor: pointer;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filtr-btn-list {
@@ -535,6 +551,8 @@ header {
 }
 .projects-item-link {
   display: inline-block;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects-item-link:hover,
 .projects-item-link:focus {
